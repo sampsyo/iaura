@@ -2,10 +2,12 @@ import Foundation
 
 class Track {
     var title: String
+    var id: String
     
     init(json: Dictionary<String, AnyObject>) {
         println(json)
-        self.title = (json["title"] as? String)!
+        self.title = json["title"]! as String
+        self.id = json["id"]! as String
     }
 }
 
@@ -33,5 +35,9 @@ class AURA {
             }
             handler(tracks)
         }).resume()
+    }
+    
+    func audioURL(track : Track) -> NSURL {
+        return baseURL.URLByAppendingPathComponent("tracks").URLByAppendingPathComponent(track.id).URLByAppendingPathComponent("audio")
     }
 }
