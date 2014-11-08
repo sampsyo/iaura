@@ -20,14 +20,5 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func hitTheMagicButton(sender: UIButton) {
-        var aura = AURA(base: NSURL(string: "http://0.0.0.0:8338/aura")!)
-        aura.getTracks({ (tracks : [Track]) in
-            for track in tracks {
-                println(track.title)
-            }
-        })
-    }
-
 }
 
