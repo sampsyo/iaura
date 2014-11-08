@@ -9,6 +9,7 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    var aura: AURA?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,23 +23,18 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func touchConnect(sender: UIButton) {
-        var aura = AURA(base: NSURL(string: "http://0.0.0.0:8338/aura")!)
-        aura.getTracks({ (tracks : [Track]) in
-            for track in tracks {
-                println(track.title)
-            }
+        aura = AURA(base: NSURL(string: "http://0.0.0.0:8338/aura")!)
+        // TODO this should be a server info ping
+        aura!.getTracks({ (tracks : [Track]) in
             self.performSegueWithIdentifier("ShowConnectedView", sender: self)
         })
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if (segue.identifier == "ShowConnectedView") {
+            let connectedController = segue.destinationViewController as ConnectedViewController
+            connectedController.aura = aura
+        }
     }
-    */
 
 }
