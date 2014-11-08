@@ -1,11 +1,3 @@
-//
-//  TracksViewController.swift
-//  iaura
-//
-//  Created by Adrian Sampson on 11/8/14.
-//  Copyright (c) 2014 Adrian Sampson. All rights reserved.
-//
-
 import UIKit
 
 class TracksViewController: UITableViewController {
