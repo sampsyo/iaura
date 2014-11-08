@@ -15,13 +15,14 @@ class TracksViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         println("table view loaded")
-        aura = (self.tabBarController as ConnectedViewController).aura
+        aura = (self.navigationController as ConnectedViewController).aura
         
         // Add pull-to-refresh.
         self.refreshControl = UIRefreshControl()
         self.refreshControl!.addTarget(self, action: "loadTracks", forControlEvents: UIControlEvents.ValueChanged)
         
         // Start "freshing" (that's refreshing the first time!).
+        self.refreshControl!.beginRefreshing()
         self.loadTracks()
     }
     

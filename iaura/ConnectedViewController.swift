@@ -1,6 +1,6 @@
 import UIKit
 
-class ConnectedViewController: UITabBarController {
+class ConnectedViewController: UINavigationController {
     var aura: AURA?
 
     override func viewDidLoad() {

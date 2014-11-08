@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7BC4429E1A0E9C1B00A27B3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC4429D1A0E9C1B00A27B3E /* AppDelegate.swift */; };
-		7BC442A21A0E9C1B00A27B3E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC442A11A0E9C1B00A27B3E /* SecondViewController.swift */; };
 		7BC442A51A0E9C1B00A27B3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC442A31A0E9C1B00A27B3E /* Main.storyboard */; };
 		7BC442A71A0E9C1B00A27B3E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC442A61A0E9C1B00A27B3E /* Images.xcassets */; };
 		7BC442AA1A0E9C1B00A27B3E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BC442A81A0E9C1B00A27B3E /* LaunchScreen.xib */; };
@@ -34,7 +33,6 @@
 		7BC442981A0E9C1B00A27B3E /* iaura.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iaura.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC4429C1A0E9C1B00A27B3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BC4429D1A0E9C1B00A27B3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7BC442A11A0E9C1B00A27B3E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		7BC442A41A0E9C1B00A27B3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BC442A61A0E9C1B00A27B3E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7BC442A91A0E9C1B00A27B3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -89,7 +87,6 @@
 			children = (
 				7BC442BF1A0EA5C100A27B3E /* aura.swift */,
 				7BC4429D1A0E9C1B00A27B3E /* AppDelegate.swift */,
-				7BC442A11A0E9C1B00A27B3E /* SecondViewController.swift */,
 				7BC442A31A0E9C1B00A27B3E /* Main.storyboard */,
 				7BC442C71A0EC45400A27B3E /* TracksViewController.swift */,
 				7BC442CA1A0ECD9900A27B3E /* TrackCell.swift */,
@@ -229,7 +226,6 @@
 			files = (
 				7BC442CB1A0ECD9900A27B3E /* TrackCell.swift in Sources */,
 				7BC442C21A0EAEE100A27B3E /* HomeViewController.swift in Sources */,
-				7BC442A21A0E9C1B00A27B3E /* SecondViewController.swift in Sources */,
 				7BC442C61A0EC28400A27B3E /* ConnectedViewController.swift in Sources */,
 				7BC4429E1A0E9C1B00A27B3E /* AppDelegate.swift in Sources */,
 				7BC442C81A0EC45400A27B3E /* TracksViewController.swift in Sources */,
