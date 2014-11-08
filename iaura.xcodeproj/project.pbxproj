@@ -14,6 +14,7 @@
 		7BC442A71A0E9C1B00A27B3E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC442A61A0E9C1B00A27B3E /* Images.xcassets */; };
 		7BC442AA1A0E9C1B00A27B3E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BC442A81A0E9C1B00A27B3E /* LaunchScreen.xib */; };
 		7BC442B61A0E9C1B00A27B3E /* iauraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC442B51A0E9C1B00A27B3E /* iauraTests.swift */; };
+		7BC442C01A0EA5C100A27B3E /* aura.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC442BF1A0EA5C100A27B3E /* aura.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		7BC442AF1A0E9C1B00A27B3E /* iauraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iauraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC442B41A0E9C1B00A27B3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BC442B51A0E9C1B00A27B3E /* iauraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iauraTests.swift; sourceTree = "<group>"; };
+		7BC442BF1A0EA5C100A27B3E /* aura.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aura.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		7BC4429A1A0E9C1B00A27B3E /* iaura */ = {
 			isa = PBXGroup;
 			children = (
+				7BC442BF1A0EA5C100A27B3E /* aura.swift */,
 				7BC4429D1A0E9C1B00A27B3E /* AppDelegate.swift */,
 				7BC4429F1A0E9C1B00A27B3E /* FirstViewController.swift */,
 				7BC442A11A0E9C1B00A27B3E /* SecondViewController.swift */,
@@ -217,6 +220,7 @@
 			files = (
 				7BC442A21A0E9C1B00A27B3E /* SecondViewController.swift in Sources */,
 				7BC4429E1A0E9C1B00A27B3E /* AppDelegate.swift in Sources */,
+				7BC442C01A0EA5C100A27B3E /* aura.swift in Sources */,
 				7BC442A01A0E9C1B00A27B3E /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
