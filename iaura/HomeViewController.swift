@@ -2,9 +2,11 @@ import UIKit
 
 class HomeViewController: UIViewController {
     var aura: AURA?
+    @IBOutlet var serverField: UITextField!
     
     @IBAction func touchConnect(sender: UIButton) {
-        aura = AURA(base: NSURL(string: "http://0.0.0.0:8338/aura")!)
+        var server = serverField.text
+        aura = AURA(base: NSURL(string: server)!)
         // TODO this should be a server info ping
         aura!.getTracks({ (tracks : [Track]) in
             self.performSegueWithIdentifier("ShowConnectedView", sender: self)

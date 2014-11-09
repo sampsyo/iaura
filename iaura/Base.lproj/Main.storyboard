@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ix-HO-3NN">
-                                <rect key="frame" x="279" y="285" width="59" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ix-HO-3NN">
+                                <rect key="frame" x="271" y="373" width="59" height="30"/>
                                 <state key="normal" title="Connect">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -26,10 +26,21 @@
                                     <action selector="touchConnect:" destination="SNA-VM-1vq" eventType="touchUpInside" id="8Tp-Td-C92"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="http://0.0.0.0:8338/aura" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="co3-v0-rO9">
+                                <rect key="frame" x="159" y="335" width="282" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="4ix-HO-3NN" secondAttribute="centerX" constant="-8.5" id="bg4-Mm-FlU"/>
+                            <constraint firstItem="4ix-HO-3NN" firstAttribute="top" secondItem="co3-v0-rO9" secondAttribute="bottom" constant="8" id="ilF-hS-qHj"/>
+                            <constraint firstAttribute="centerX" secondItem="co3-v0-rO9" secondAttribute="centerX" id="tOi-R9-wvp"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="serverField" destination="co3-v0-rO9" id="51S-de-day"/>
                         <segue destination="g2B-f6-tPT" kind="show" identifier="ShowConnectedView" id="Nrs-io-PoE"/>
                     </connections>
                 </viewController>
