@@ -1,17 +1,19 @@
 import UIKit
-import AVFoundation
 
 class ConnectedViewController: UINavigationController {
-    var aura: AURA?
-    var player = AVQueuePlayer()
+    var aura: AURA? {
+        didSet {
+            player = AuraPlayer(a: aura!)
+        }
+    }
+    var player: AuraPlayer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     func enqueue(track : Track) {
-        var item = AVPlayerItem(URL: aura!.audioURL(track))
-        player.insertItem(item, afterItem: nil)
-        player.play()
+        player!.enqueue(track)
+        player!.play()
     }
 }

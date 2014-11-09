@@ -37,6 +37,14 @@ class TracksViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // TODO dispose of the tracks array
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "ShowPlayer") {
+            // TODO probably need a less janky way to wire up this connection
+            let playerController = segue.destinationViewController as PlayerController
+            playerController.player = mainController().player
+        }
+    }
 
     // MARK: - Table view data source
 
