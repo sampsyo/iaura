@@ -6,7 +6,6 @@ class TracksViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        println("table view loaded")
         aura = (self.navigationController as ConnectedViewController).aura
         
         // Add pull-to-refresh.
@@ -25,10 +24,14 @@ class TracksViewController: UITableViewController {
             self.refreshControl!.endRefreshing()
         })
     }
+    
+    @IBAction func showSetting(sender: AnyObject) {
+        println("sett")
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        // TODO dispose of the tracks array
     }
 
     // MARK: - Table view data source

@@ -53,6 +53,41 @@
             </objects>
             <point key="canvasLocation" x="-58" y="0.0"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="A5a-NX-y41">
+            <objects>
+                <viewController id="Rmt-jY-Ico" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xft-P5-eWl"/>
+                        <viewControllerLayoutGuide type="bottom" id="tsF-yC-Za7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tyh-S5-igc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="POQ-fy-3Rc">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Done" style="done" id="d7N-hI-JkI">
+                                        <connections>
+                                            <segue destination="1k1-7e-old" kind="custom" customClass="DismissSegue" customModule="iaura" id="jfg-Uv-dCA"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="POQ-fy-3Rc" secondAttribute="trailing" id="B0S-AO-rb5"/>
+                            <constraint firstItem="POQ-fy-3Rc" firstAttribute="bottom" secondItem="tsF-yC-Za7" secondAttribute="top" id="Qdk-WN-0Ii"/>
+                            <constraint firstItem="POQ-fy-3Rc" firstAttribute="leading" secondItem="tyh-S5-igc" secondAttribute="leading" id="gIj-7z-acP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vxx-zj-w54" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1402" y="-746"/>
+        </scene>
         <!--Tracks-->
         <scene sceneID="Qh1-CI-rCX">
             <objects>
@@ -91,11 +126,21 @@
                             <outlet property="delegate" destination="1k1-7e-old" id="dCT-hG-qQs"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Tracks" id="eW5-SY-YvF"/>
+                    <navigationItem key="navigationItem" title="Tracks" id="eW5-SY-YvF">
+                        <barButtonItem key="leftBarButtonItem" title="Settings" id="jsd-uw-WJL">
+                            <connections>
+                                <action selector="showSetting:" destination="1k1-7e-old" id="KIY-Pd-mPE"/>
+                                <segue destination="Rmt-jY-Ico" kind="presentation" id="cVh-VJ-TEa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RJB-uW-3ls" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="704" y="0.0"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="jfg-Uv-dCA"/>
+    </inferredMetricsTieBreakers>
 </document>
