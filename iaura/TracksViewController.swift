@@ -39,7 +39,7 @@ class TracksViewController: UITableViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if (segue.identifier == "ShowPlayer") {
+        if segue.identifier == "ShowPlayer" || segue.identifier == "ShowTrack" {
             // TODO probably need a less janky way to wire up this connection
             let playerController = segue.destinationViewController as PlayerController
             playerController.player = mainController().player

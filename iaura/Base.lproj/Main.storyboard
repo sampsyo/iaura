@@ -118,7 +118,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="titleLabel" destination="WeA-6W-VKv" id="1rB-ID-1Hw"/>
-                                    <segue destination="5Mz-ET-6E7" kind="show" identifier="ShowPlayer" id="2RH-BY-f5I"/>
+                                    <segue destination="5Mz-ET-6E7" kind="show" identifier="ShowTrack" id="2RH-BY-f5I"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -132,6 +132,11 @@
                             <connections>
                                 <action selector="showSetting:" destination="1k1-7e-old" id="KIY-Pd-mPE"/>
                                 <segue destination="Rmt-jY-Ico" kind="presentation" id="cVh-VJ-TEa"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="note" style="plain" id="2KJ-IE-L1N">
+                            <connections>
+                                <segue destination="5Mz-ET-6E7" kind="show" identifier="ShowPlayer" id="cW8-gl-04e"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -190,9 +195,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="note" width="22" height="22"/>
         <image name="pause" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jfg-Uv-dCA"/>
+        <segue reference="cW8-gl-04e"/>
+        <segue reference="Hb9-cE-0KP"/>
     </inferredMetricsTieBreakers>
 </document>
