@@ -4,6 +4,7 @@ class PlayerController: UIViewController {
     
     var player : AuraPlayer?
     @IBOutlet var statusLabel : UILabel!
+    @IBOutlet weak var playPauseButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,4 +20,13 @@ class PlayerController: UIViewController {
         super.didReceiveMemoryWarning()
     }
 
+    @IBAction func togglePlay(sender: AnyObject) {
+        if player!.playing() {
+            player!.pause()
+            playPauseButton.setTitle("Play", forState: UIControlState.Normal)
+        } else {
+            player!.play()
+            playPauseButton.setTitle("Pause", forState: UIControlState.Normal)
+        }
+    }
 }

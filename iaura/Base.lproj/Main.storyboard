@@ -152,16 +152,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Now Playing" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PkY-Os-AAL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now Playing" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PkY-Os-AAL">
                                 <rect key="frame" x="107" y="289" width="387" height="192"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giA-dl-CaT">
+                                <rect key="frame" x="240" y="550" width="159" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bPL-ZN-dWQ"/>
+                                    <constraint firstAttribute="width" constant="159" id="uBQ-11-mks"/>
+                                </constraints>
+                                <state key="normal" title="Pause">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="togglePlay:" destination="5Mz-ET-6E7" eventType="touchUpInside" id="XLz-Wc-7Yu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PkY-Os-AAL" firstAttribute="leading" secondItem="JFk-yd-LxA" secondAttribute="leadingMargin" constant="91" id="7Hi-dV-Xpz"/>
+                            <constraint firstItem="giA-dl-CaT" firstAttribute="top" secondItem="PkY-Os-AAL" secondAttribute="bottom" constant="69" id="Dkn-Nt-AeO"/>
+                            <constraint firstItem="giA-dl-CaT" firstAttribute="leading" secondItem="JFk-yd-LxA" secondAttribute="leading" constant="240" id="Neb-nb-gxE"/>
+                            <constraint firstAttribute="bottom" secondItem="giA-dl-CaT" secondAttribute="bottom" constant="20" symbolic="YES" id="cfb-8m-sg9"/>
+                            <constraint firstItem="PkY-Os-AAL" firstAttribute="top" secondItem="beV-Ko-mGZ" secondAttribute="bottom" constant="269" id="mC8-eb-CEG"/>
+                            <constraint firstItem="PkY-Os-AAL" firstAttribute="centerX" secondItem="JFk-yd-LxA" secondAttribute="centerX" id="vRV-af-D5Y"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="playPauseButton" destination="giA-dl-CaT" id="qYf-mH-SOX"/>
                         <outlet property="statusLabel" destination="PkY-Os-AAL" id="Ltw-Wh-PC1"/>
                     </connections>
                 </viewController>

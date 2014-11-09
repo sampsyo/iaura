@@ -18,6 +18,10 @@ class AuraPlayer {
         queuePlayer.pause()
     }
     
+    func playing() -> Bool {
+        return queuePlayer.rate > 0.0
+    }
+    
     func enqueue(track: Track) {
         var url = aura.audioURL(track)
         var item = AVPlayerItem(URL: aura.audioURL(track))
