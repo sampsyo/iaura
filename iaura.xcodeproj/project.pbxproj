@@ -17,6 +17,7 @@
 		7BC442C81A0EC45400A27B3E /* TracksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC442C71A0EC45400A27B3E /* TracksViewController.swift */; };
 		7BC442CB1A0ECD9900A27B3E /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC442CA1A0ECD9900A27B3E /* TrackCell.swift */; };
 		7BC442CE1A0EF81200A27B3E /* DismissSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC442CD1A0EF81200A27B3E /* DismissSegue.swift */; };
+		7BF5AACE1A0EFE87004ECE88 /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF5AACD1A0EFE87004ECE88 /* PlayerController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		7BC442C71A0EC45400A27B3E /* TracksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TracksViewController.swift; sourceTree = "<group>"; };
 		7BC442CA1A0ECD9900A27B3E /* TrackCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 		7BC442CD1A0EF81200A27B3E /* DismissSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissSegue.swift; sourceTree = "<group>"; };
+		7BF5AACD1A0EFE87004ECE88 /* PlayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				7BC442C51A0EC28400A27B3E /* ConnectedViewController.swift */,
 				7BC442C11A0EAEE100A27B3E /* HomeViewController.swift */,
 				7BC442CD1A0EF81200A27B3E /* DismissSegue.swift */,
+				7BF5AACD1A0EFE87004ECE88 /* PlayerController.swift */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			files = (
 				7BC442CB1A0ECD9900A27B3E /* TrackCell.swift in Sources */,
 				7BC442C21A0EAEE100A27B3E /* HomeViewController.swift in Sources */,
+				7BF5AACE1A0EFE87004ECE88 /* PlayerController.swift in Sources */,
 				7BC442CE1A0EF81200A27B3E /* DismissSegue.swift in Sources */,
 				7BC442C61A0EC28400A27B3E /* ConnectedViewController.swift in Sources */,
 				7BC4429E1A0E9C1B00A27B3E /* AppDelegate.swift in Sources */,
@@ -315,6 +319,7 @@
 				7BC442BB1A0E9C1B00A27B3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

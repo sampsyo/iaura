@@ -53,10 +53,10 @@
             </objects>
             <point key="canvasLocation" x="-58" y="0.0"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings-->
         <scene sceneID="A5a-NX-y41">
             <objects>
-                <viewController id="Rmt-jY-Ico" sceneMemberID="viewController">
+                <viewController id="Rmt-jY-Ico" userLabel="Settings" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xft-P5-eWl"/>
                         <viewControllerLayoutGuide type="bottom" id="tsF-yC-Za7"/>
@@ -118,6 +118,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="titleLabel" destination="WeA-6W-VKv" id="1rB-ID-1Hw"/>
+                                    <segue destination="5Mz-ET-6E7" kind="show" identifier="ShowPlayer" id="2RH-BY-f5I"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -138,6 +139,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RJB-uW-3ls" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="704" y="0.0"/>
+        </scene>
+        <!--Player-->
+        <scene sceneID="ZUI-Uc-zO7">
+            <objects>
+                <viewController id="5Mz-ET-6E7" userLabel="Player" customClass="PlayerController" customModule="iaura" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="beV-Ko-mGZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="2l3-Hi-0Xw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JFk-yd-LxA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="clw-Of-f4j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1522" y="178"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

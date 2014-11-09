@@ -26,7 +26,11 @@ class TracksViewController: UITableViewController {
     }
     
     @IBAction func showSetting(sender: AnyObject) {
-        println("sett")
+        println("settings")
+    }
+    
+    func mainController() -> ConnectedViewController {
+        return navigationController as ConnectedViewController
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,7 +59,7 @@ class TracksViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         var track = tracks![indexPath.item]
-        println("play", aura!.audioURL(track))
+        mainController().enqueue(track)
     }
 
 }
