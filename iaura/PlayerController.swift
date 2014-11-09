@@ -23,10 +23,10 @@ class PlayerController: UIViewController {
     @IBAction func togglePlay(sender: AnyObject) {
         if player!.playing() {
             player!.pause()
-            playPauseButton.setTitle("Play", forState: UIControlState.Normal)
+            playPauseButton.setImage(UIImage(named: "play"), forState: UIControlState.Normal)
         } else {
             player!.play()
-            playPauseButton.setTitle("Pause", forState: UIControlState.Normal)
+            playPauseButton.setImage(UIImage(named: "pause"), forState: UIControlState.Normal)
         }
     }
 }
