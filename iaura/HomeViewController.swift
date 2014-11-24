@@ -12,12 +12,12 @@ class HomeViewController: UIViewController {
         var server = serverField.text
         aura = AURA(base: NSURL(string: server)!)
         // TODO this should be a server info ping
-        aura!.getTracks({ (tracks : [Track]) in
+        aura!.getTracks() { tracks in
             // Perform segue on the main thread.
-            onMainThread({ () -> Void in
+            onMainThread() {
                 self.performSegueWithIdentifier("ShowConnectedView", sender: self)
-            })
-        })
+            }
+        }
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
